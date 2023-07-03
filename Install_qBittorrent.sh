@@ -2,7 +2,7 @@
 
 sudo apt-get update
 
-docker run -d \
+sudo docker run -d \
   --name=qbittorrent \
   -e PUID=1000 \
   -e PGID=1000 \
