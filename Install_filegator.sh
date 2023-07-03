@@ -1,3 +1,7 @@
+#!/bin/bash
+
+sudo apt-get update
+
 sudo docker run -d \
   --name=filegator \
   -e PUID=1000 \
