@@ -1,4 +1,4 @@
-sudo apt update
+sudo apt-get update
 
 docker run -d \
   --name=qbittorrent \
