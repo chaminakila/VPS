@@ -15,12 +15,12 @@ sudo systemctl restart ssh
 sudo ufw allow 168/tcp
 sudo ufw enable
 sed -i '2,17d' Secure.sh
+sudo deluser ubuntu
+sudo deluser --remove-home ubuntu
 sudo reboot
-# /etc/services
 
 #https://support.us.ovhcloud.com/hc/en-us/articles/4412351365139-How-to-Secure-a-VPS
 #https://coderrocketfuel.com/article/remove-a-users-sudo-privileges-on-ubuntu
-#sudo userdel -r ubuntu
 
 #https://linuxhandbook.com/remove-lines-file/
 #https://www.tutorialspoint.com/run-a-script-on-startup-in-linux
