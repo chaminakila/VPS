@@ -6,7 +6,7 @@ sudo sed -i "s/#Port 22/Port 168/gi" /etc/ssh/sshd_config
 #https://unix.stackexchange.com/questions/145299/simple-sed-replacement-of-tabs-mysteriously-failing
 sudo sed -i "s/$(printf 'ssh\t\t22')/$(printf 'ssh\t\t168')/gi" /etc/services
 #https://askubuntu.com/questions/1439461/ssh-default-port-not-changing-ubuntu-22-10
-mkdir -p /etc/systemd/system/ssh.socket.d
+sudo mkdir -p /etc/systemd/system/ssh.socket.d
 echo '[Socket]' | sudo tee -a /etc/systemd/system/ssh.socket.d/listen.conf
 echo 'ListenStream=' | sudo tee -a /etc/systemd/system/ssh.socket.d/listen.conf
 echo 'ListenStream=168' | sudo tee -a /etc/systemd/system/ssh.socket.d/listen.conf
