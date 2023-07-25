@@ -9,7 +9,7 @@ sudo docker run -d \
   -e TZ=Asia/Colombo \
   -p 80:80 \
   -p 443:443 \
-  -v /home/ubuntu/docker/filegator/config:/config \
-  -v /home/ubuntu/docker/qBittorrent/downloads:/data \
+  -v /home/kachaya/docker/filegator/config:/config \
+  -v /home/kachaya/docker/qBittorrent/downloads:/data \
   --restart unless-stopped \
   maxime1907/filegator
