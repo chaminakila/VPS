@@ -15,8 +15,8 @@ sudo systemctl restart ssh
 sudo ufw allow 168/tcp
 sudo ufw enable
 sed -i '2,17d' Secure.sh
-sudo deluser ubuntu
-sudo deluser --remove-home ubuntu
+#sudo deluser ubuntu
+#sudo deluser --remove-home ubuntu
 sudo reboot
 
 #https://support.us.ovhcloud.com/hc/en-us/articles/4412351365139-How-to-Secure-a-VPS
